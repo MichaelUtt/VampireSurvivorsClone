@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://bynhvy6tb0qfv"]
+
+[ext_resource type="Texture2D" uid="uid://b4oryvm1eyipw" path="res://assets/tiles/grass1.png" id="1_nxphb"]
+[ext_resource type="PackedScene" uid="uid://b7rlg2oeh100q" path="res://Player/player.tscn" id="2_2byfl"]
+[ext_resource type="PackedScene" uid="uid://cc4yjpvtlqbdv" path="res://Enemies/enemy.tscn" id="3_8igog"]
+
+[node name="World" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_nxphb")
+region_enabled = true
+region_rect = Rect2(-4000, -4000, 4000, 4000)
+
+[node name="Player" parent="." instance=ExtResource("2_2byfl")]
+
+[node name="Enemy_Bat" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(116, 34)
+
+[node name="Enemy_Bat2" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(93, 68)
+
+[node name="Enemy_Bat3" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(89, 93)
+
+[node name="Enemy_Bat4" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(54, 52)
+
+[node name="Enemy_Bat5" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(51, 94)
+
+[node name="Enemy_Bat6" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(34, 78)
+
+[node name="Enemy_Bat7" parent="." instance=ExtResource("3_8igog")]
+position = Vector2(67, 30)
