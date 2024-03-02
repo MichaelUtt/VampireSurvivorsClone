@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4oryvm1eyipw" path="res://assets/tiles/grass1.png" id="1_nxphb"]
 [ext_resource type="PackedScene" uid="uid://b7rlg2oeh100q" path="res://Player/player.tscn" id="2_2byfl"]
-[ext_resource type="PackedScene" uid="uid://cc4yjpvtlqbdv" path="res://Enemies/enemy.tscn" id="3_8igog"]
+[ext_resource type="PackedScene" uid="uid://cc4yjpvtlqbdv" path="res://Enemies/enemy_bat.tscn" id="3_8igog"]
 
 [node name="World" type="Node2D"]
 
