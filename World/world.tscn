@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bynhvy6tb0qfv"]
+[gd_scene load_steps=6 format=3 uid="uid://bynhvy6tb0qfv"]
 
 [ext_resource type="Texture2D" uid="uid://b4oryvm1eyipw" path="res://assets/tiles/grass1.png" id="1_nxphb"]
 [ext_resource type="PackedScene" uid="uid://b7rlg2oeh100q" path="res://Player/player.tscn" id="2_2byfl"]
 [ext_resource type="PackedScene" uid="uid://cc4yjpvtlqbdv" path="res://Enemies/enemy_bat.tscn" id="3_8igog"]
 [ext_resource type="PackedScene" uid="uid://cny7aan88bc62" path="res://Enemies/enemy_zombie.tscn" id="4_l2j1j"]
+[ext_resource type="PackedScene" uid="uid://gd3ow4vft7lj" path="res://Enemies/enemy_skull.tscn" id="5_dsxhl"]
 
 [node name="World" type="Node2D"]
 
@@ -19,23 +20,8 @@ metadata/_edit_lock_ = true
 [node name="Enemy_Bat" parent="." instance=ExtResource("3_8igog")]
 position = Vector2(116, 34)
 
-[node name="Enemy_Bat2" parent="." instance=ExtResource("3_8igog")]
-position = Vector2(93, 68)
-
-[node name="Enemy_Bat3" parent="." instance=ExtResource("3_8igog")]
-position = Vector2(89, 93)
-
-[node name="Enemy_Bat4" parent="." instance=ExtResource("3_8igog")]
-position = Vector2(54, 52)
-
-[node name="Enemy_Bat5" parent="." instance=ExtResource("3_8igog")]
-position = Vector2(51, 94)
-
-[node name="Enemy_Bat6" parent="." instance=ExtResource("3_8igog")]
-position = Vector2(34, 78)
-
-[node name="Enemy_Bat7" parent="." instance=ExtResource("3_8igog")]
-position = Vector2(67, 30)
-
 [node name="Enemy_Zombie" parent="." instance=ExtResource("4_l2j1j")]
 position = Vector2(72, -30)
+
+[node name="Enemy_Zombie2" parent="." instance=ExtResource("5_dsxhl")]
+position = Vector2(-38, 34)
