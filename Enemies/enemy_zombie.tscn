@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cny7aan88bc62"]
 
 [ext_resource type="Script" path="res://Enemies/enemy.gd" id="1_neowc"]
-[ext_resource type="Texture2D" uid="uid://ch5f6h87vk8tt" path="res://assets/enemies/zombie-weak.png" id="2_mv5uo"]
+[ext_resource type="Texture2D" uid="uid://cnyhx453hrw37" path="res://assets/enemies/zombie-strong-anim.png" id="2_nvsjm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_73ggy"]
 radius = 4.655
@@ -61,6 +61,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(0, 0), Vector2(0, -2)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_857fb"]
 _data = {
@@ -76,9 +88,11 @@ script = ExtResource("1_neowc")
 position = Vector2(0, -2)
 rotation = -0.0802851
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("2_mv5uo")
+texture = ExtResource("2_nvsjm")
+hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-0.5, -0.5)
 shape = SubResource("CapsuleShape2D_73ggy")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bynhvy6tb0qfv"]
+[gd_scene load_steps=5 format=3 uid="uid://bynhvy6tb0qfv"]
 
 [ext_resource type="Texture2D" uid="uid://b4oryvm1eyipw" path="res://assets/tiles/grass1.png" id="1_nxphb"]
 [ext_resource type="PackedScene" uid="uid://b7rlg2oeh100q" path="res://Player/player.tscn" id="2_2byfl"]
 [ext_resource type="PackedScene" uid="uid://cc4yjpvtlqbdv" path="res://Enemies/enemy_bat.tscn" id="3_8igog"]
+[ext_resource type="PackedScene" uid="uid://cny7aan88bc62" path="res://Enemies/enemy_zombie.tscn" id="4_l2j1j"]
 
 [node name="World" type="Node2D"]
 
@@ -35,3 +36,6 @@ position = Vector2(34, 78)
 
 [node name="Enemy_Bat7" parent="." instance=ExtResource("3_8igog")]
 position = Vector2(67, 30)
+
+[node name="Enemy_Zombie" parent="." instance=ExtResource("4_l2j1j")]
+position = Vector2(72, -30)

@@ -7,6 +7,20 @@
 radius = 7.0
 height = 15.0
 
+[sub_resource type="Animation" id="Animation_x60rf"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.0802851, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
 [sub_resource type="Animation" id="Animation_07c08"]
 resource_name = "walk"
 length = 1.6
@@ -48,20 +62,6 @@ tracks/2/keys = {
 "values": [Vector2(0, 0), Vector2(0, -2)]
 }
 
-[sub_resource type="Animation" id="Animation_x60rf"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-0.0802851, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_857fb"]
 _data = {
 "RESET": SubResource("Animation_x60rf"),
@@ -73,8 +73,9 @@ motion_mode = 1
 script = ExtResource("1_tnp6i")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.985401)
 rotation = -0.0802851
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.50146, 0.6)
 texture = ExtResource("2_7vxjd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
